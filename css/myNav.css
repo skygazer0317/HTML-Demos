@@ -1,0 +1,25 @@
+nav{
+    background-color: cornflowerblue;
+}
+ul{
+    justify-content: right;
+    display: flex;
+    list-style: none;
+}
+li{
+    padding: 20px;
+
+}
+a{
+    text-decoration: none;
+    font: 900;
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+    color: cornsilk;
+}
+a:hover{
+    color: sienna;
+}
+a:visited{
+    color: black;
+}

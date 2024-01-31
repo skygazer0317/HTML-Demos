@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre>
+        <textarea rows="5" cols="60" id="feeback" onkeydown="countChars()"></textarea>
+        <b>Remaining characters <span id="count">100</span></b>
+    </pre>
+    <script>
+function countChars(){
+    const maxChars=100;
+    let txtElement=document.querySelector("#feeback")
+    let enteredValue=txtElement.value;
+    let remainingChars=maxChars - enteredValue.length;
+    let spanElement=document.querySelector('#count')
+    spanElement.textContent=remainingChars;
+    if(remainingChars===0){
+        txtElement.disabled=true;
+    }
+    if(remainingChars<=5){
+    spanElement.style.color='red'
+    }
+    else{
+        spanElement.style.color="blue"
+    }
+
+}
+    </script>
+</body>
+</html>

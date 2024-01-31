@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .gradient-background{
+        background: linear-gradient(to right,
+        rgba(203, 77, 14,0.695),
+        rgba(164, 164, 45, 0.135)
+        );
+       
+    }
+    .fullwidth{
+        flex: 1;
+        padding:20px ;
+        margin: 10px;
+        border: 1px solid black;
+    }
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .item{
+        padding: 20px;
+        margin: 10px;
+        flex:1;
+        border: 1px solid black;
+    }
+    @media(max-width:480px){
+        .item{
+            flex-basis: 100%;
+        }
+    }
+</style>
+<body>
+    <div class="fullwidth gradient-background">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet dolorum, autem perferendis cupiditate reiciendis ullam molestias sint ducimus voluptate. Nostrum ab maiores veritatis repellat fugiat repudiandae nam voluptatem ea? Ducimus!</div>
+    <div class="container">
+        <div class="item gradient-background">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus, eveniet quam. Hic aspernatur eveniet sed eos corporis possimus, ullam deleniti optio dolor perferendis voluptates temporibus accusantium quae suscipit! Eaque, officiis.</div>
+        <div class="item gradient-background">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus inventore, consequuntur molestiae veniam voluptatem quam ex consectetur omnis nihil iure magni repellat, minima aspernatur doloremque, aut exercitationem. Officiis, asperiores provident.</div>
+        <div class="item gradient-background">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel enim nihil, sit sapiente veritatis odio ut exercitationem libero voluptas facere nostrum quas quo inventore repellendus quisquam expedita perferendis praesentium incidunt.</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="divid">
+        <p>This is first para</p>
+        <p>This is second para</p>
+        <p>This is third para</p>
+    </div>
+    <button onClick="addpara()">click me to add a new para</button>
+    <script>
+        function addpara(){
+            let pElement=document.createElement('p')
+            pElement.textContent='vada ah machi valaka bajji'
+
+            let divElement=document.querySelector('div')
+            divElement.appendChild(pElement)
+        }
+    </script>
+</body>
+</html>

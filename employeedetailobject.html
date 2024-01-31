@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function display(){
+        let employee={'name':'partha','age':20,'salary':15000}
+        console.log(employee)
+        document.getElementById('val').innerHTML=`Name:${employee.name} Age:${employee.age} Salary:${employee.salary}`
+        }
+    </script>
+</head>
+<body>
+    <button onClick="display()">Display</button><br>
+    <span id="val"></span>
+</body>
+</html>

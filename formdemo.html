@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>REGISTRATION</title>
+    <link href="css/myNav.css" rel="stylesheet" type="text/css">
+    <link href="css/formstyle.css" rel="stylesheet" type="text/css">
+</head>
+<body >
+    <nav style="margin-top: 0px;">
+        <ul>
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
+    <form  class="form-container">  
+            <center>
+          <div>
+            <h1 style="color:black; background-color:bisque; font-style:normal;"> <center>REGISTRATION FORM</center></h1>
+
+           <label for="firstname">FIRSTNAME</label>     
+           <input type="text" name="firstname" id="firstname">
+        </div>
+        <div>
+           <label for="lastname">LASTNAME</label>       
+           <input type="text" name="lastname" id="lastname">
+        </div>
+        <div>
+           <label for="email">EMAIL</label>              
+           <input type="email" name="email" id="email">
+        </div>
+        <div>
+           <label for="password">PASSWORD</label>         
+           <input type="password" name="password" id="password">
+        </div>
+        <div>
+           <label for="phonenumber">PHONENUMBER</label>   
+           <input type="text" name="phonenumber" maxlength="10" minlength="10" id="phonenumber">
+        </div>
+        <div>
+           <label for="age">AGE</label>            
+           <input type="number" name="age" max="100" min="18" id="age" style="width: 175px;">
+        </div>
+        <div>
+           <label for="gender">GENDER:</label>                    
+           <input type="radio" name="gender" id="gender">MALE
+           <input type="radio" name="gender" id="gender">FEMALE
+           <input type="radio" name="gender" id="gender">OTHERS
+        </div>
+        <div>
+           <label for="citys">CITY:</label>
+           <select name="city" id="city">
+            <option value="chennai">CHENNAI</option>
+            <option value="banglore">BANGLORE</option>
+            <option value="pune">PUNE</option>
+           </select> 
+        </div>
+        <div>
+           <label>SELECT FAVOURITE LANGUAG:</label>
+           <input type="checkbox" name="fav1">C++
+           <input type="checkbox" name="fav2">Java
+           <input type="checkbox" name="fav3">Python
+        </div>
+
+           <button>SUBMIT</button>        <button>CANCEL</button>
+</center>
+</form>
+</body>
+</html>

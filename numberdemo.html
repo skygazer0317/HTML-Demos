@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function getNumber(){
+            let n=document.getElementById('myNum').value 
+            document.getElementById('spanId').innerHTML=
+           ` <b>You have entered: ${n} </b>`
+        }
+    </script>
+</head>
+<body>
+   <label for="myNum"> Enter a number:</label>
+    <input type="number" id="myNum" ><br>
+    <button onclick="getNumber()">Click Me!</button> <br>
+<span id="spanId"></span>
+    
+</body>
+</html>

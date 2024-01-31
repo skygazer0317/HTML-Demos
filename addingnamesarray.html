@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let arr=[]
+        let numbers=[45,76,87,95,23]
+        console.log(numbers)
+        console.log(numbers.shift())
+        console.log('after shift')
+        console.log(numbers)
+        console.log(numbers.unshift(33,21))
+        console.log(numbers)
+     function pushNames(){
+        arr.push(document.getElementById("name").value )
+        console.log(arr)
+        let display=" "
+        arr.forEach((a)=>(display = display + a + "<br/>"))
+        document.getElementById("val").innerHTML=display;
+
+     }  
+    </script>
+</head>
+<body>
+    <pre>
+    ENTER THE NAMES: <input type="text" id="name" name="name" placeholder="enter the name">
+
+    <button onClick="pushNames()">Add names</button>
+    
+<span id="val"></span>
+</pre>
+</body>
+</html>

@@ -1,0 +1,26 @@
+a{
+    text-decoration: none;
+    font: 900;
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+}
+.showcase{
+   margin: auto;
+    border-radius: 30px;
+}
+.contact{
+    padding-right: 20px;
+}
+.copyright{
+    justify-content: center;
+    text-align: center;
+}
+.netpic{
+    width: fit-content;
+    
+}
+.logo{
+    opacity: 50%;
+    padding-left: 20px;
+}

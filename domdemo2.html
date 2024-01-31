@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="images/kok1.jpeg" width="100px" height="100px"
+    onmouseover="changeImage()" onmouseout="restoreImage()">
+
+    <a href="http://www.google.com">google</a>
+    <button  onClick="change()">change to youtube</button>
+    <script>
+        function changeImage(){
+            let imgElement=document.querySelector('img')
+            imgElement.src="../images/kok2.jpeg"
+        }
+
+        function restoreImage(){
+            let imgElement=document.querySelector("img")
+            imgElement.src="../images/kok3.jpeg"
+        }
+
+        function change(){
+            let aElement=document.querySelector("a")
+            if(aElement.textContent==='google'){
+            aElement.href="http://www.youtube.com"
+            aElement.textContent="youtube"
+            let bElement=document.querySelector("button")
+            bElement.textContent="change to Google"
+        }
+            else{
+                bElement,href="http://www.google.com"
+                aElement.textContent="google"
+                let bElement=document.querySelector('button')
+                bElement.textContent="change to youtube"
+            }
+        
+        }
+    </script>
+</body>
+</html>
